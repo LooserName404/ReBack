@@ -1,10 +1,13 @@
 ﻿module ReBack.DatabaseSettings
 
-type DatabaseSettings = {
-    ConnectionString: string
-    DatabaseName: string
-    Collections: Map<string, string>
-}
+open System.Collections.Generic
+open Microsoft.FSharp.Collections
+
+type DatabaseSettings() = 
+    member val ConnectionString: string = "" with get, set
+    member val DatabaseName: string = "" with get, set
+    member val Collections: IDictionary<string, string> = Dictionary() with get, set
+
 
 [<Literal>]
 let WORK_COLLECTION_NAME = "Work"

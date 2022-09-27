@@ -1,13 +1,16 @@
 ﻿module ReBack.Entities.User
 
-open MongoDB.Bson
+open System.Diagnostics.CodeAnalysis
 open MongoDB.Bson.Serialization.Attributes
 open ReBack.Entities.Work
+open ReBack.JsonDefaultConverter
 
+[<CLIMutable>]
+[<JsonCvt>]
 type User = {
     [<BsonId>]
-    [<BsonRepresentation(BsonType.ObjectId)>]
-    Id: string
+    [<BsonIgnoreIfNull>]
+    [<AllowNull>]mutable Id: string
     
     Name: string
     Password: string
@@ -17,21 +20,22 @@ type User = {
     Cover: CoverOption
     Works: WorkUser seq
 }
-and CoverOption =
+
+and [<JsonCvt>]CoverOption =
     | Choose of photo: string
     | CycleFavorites
-and WorkUser = {
+and [<JsonCvt>]WorkUser = {
     Work: WorkInfo
     Score: int
     Status: WorkUserStatus
 }
-and WorkUserStatus =
+and [<JsonCvt>]WorkUserStatus =
     | Completed
     | Dropped of progress: WorkProgress
     | OnHold of progress: WorkProgress
     | Ongoing of progress: WorkProgress
     | Planning
-and WorkProgress =
+and [<JsonCvt>]WorkProgress =
     | MovieProgress
     | GameProgress
     | BookProgress of page: int
