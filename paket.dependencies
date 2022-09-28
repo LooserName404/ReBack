@@ -1,0 +1,14 @@
+source https://api.nuget.org/v3/index.json
+
+storage: none
+framework: net6.0, netstandard2.0, netstandard2.1
+
+nuget FSharp.Core
+nuget FSharp.SystemTextJson
+nuget MongoDB.Bson.FSharp
+nuget MongoDB.Driver
+
+source paket-files/nupkgs
+git https://github.com/ruxo/MongoDB.FSharp master build: "dotnet pack --output ../../../nupkgs"
+
+nuget MongoDB.FSharp

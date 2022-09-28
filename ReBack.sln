@@ -1,22 +1,29 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ReBack", "ReBack.fsproj", "{55F6BE16-0E69-454C-9BFD-2E0DB2774099}"
-EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MongoDB.FSharp", "..\MongoDB.FSharp\MongoDB.FSharp\MongoDB.FSharp.fsproj", "{7CBEB93A-1590-42DB-9E40-61630E79304A}"
+# 
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ReBack.Api", "ReBack.Api\ReBack.Api.fsproj", "{359CB3E0-0E03-4587-8071-038DB561BEDE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{55F6BE16-0E69-454C-9BFD-2E0DB2774099}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{55F6BE16-0E69-454C-9BFD-2E0DB2774099}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{55F6BE16-0E69-454C-9BFD-2E0DB2774099}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{55F6BE16-0E69-454C-9BFD-2E0DB2774099}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7CBEB93A-1590-42DB-9E40-61630E79304A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7CBEB93A-1590-42DB-9E40-61630E79304A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7CBEB93A-1590-42DB-9E40-61630E79304A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7CBEB93A-1590-42DB-9E40-61630E79304A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{359CB3E0-0E03-4587-8071-038DB561BEDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{359CB3E0-0E03-4587-8071-038DB561BEDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{359CB3E0-0E03-4587-8071-038DB561BEDE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{359CB3E0-0E03-4587-8071-038DB561BEDE}.Debug|x64.Build.0 = Debug|Any CPU
+		{359CB3E0-0E03-4587-8071-038DB561BEDE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{359CB3E0-0E03-4587-8071-038DB561BEDE}.Debug|x86.Build.0 = Debug|Any CPU
+		{359CB3E0-0E03-4587-8071-038DB561BEDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{359CB3E0-0E03-4587-8071-038DB561BEDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{359CB3E0-0E03-4587-8071-038DB561BEDE}.Release|x64.ActiveCfg = Release|Any CPU
+		{359CB3E0-0E03-4587-8071-038DB561BEDE}.Release|x64.Build.0 = Release|Any CPU
+		{359CB3E0-0E03-4587-8071-038DB561BEDE}.Release|x86.ActiveCfg = Release|Any CPU
+		{359CB3E0-0E03-4587-8071-038DB561BEDE}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
