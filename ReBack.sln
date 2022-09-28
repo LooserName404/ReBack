@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# 
+#
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ReBack.Api", "ReBack.Api\ReBack.Api.fsproj", "{359CB3E0-0E03-4587-8071-038DB561BEDE}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ReBack.Api.Tests", "ReBack.Api.Tests\ReBack.Api.Tests.fsproj", "{25D2A189-620A-4F11-B60B-7B6111A9F7A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,5 +27,17 @@ Global
 		{359CB3E0-0E03-4587-8071-038DB561BEDE}.Release|x64.Build.0 = Release|Any CPU
 		{359CB3E0-0E03-4587-8071-038DB561BEDE}.Release|x86.ActiveCfg = Release|Any CPU
 		{359CB3E0-0E03-4587-8071-038DB561BEDE}.Release|x86.Build.0 = Release|Any CPU
+		{25D2A189-620A-4F11-B60B-7B6111A9F7A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25D2A189-620A-4F11-B60B-7B6111A9F7A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25D2A189-620A-4F11-B60B-7B6111A9F7A3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{25D2A189-620A-4F11-B60B-7B6111A9F7A3}.Debug|x64.Build.0 = Debug|Any CPU
+		{25D2A189-620A-4F11-B60B-7B6111A9F7A3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{25D2A189-620A-4F11-B60B-7B6111A9F7A3}.Debug|x86.Build.0 = Debug|Any CPU
+		{25D2A189-620A-4F11-B60B-7B6111A9F7A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25D2A189-620A-4F11-B60B-7B6111A9F7A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25D2A189-620A-4F11-B60B-7B6111A9F7A3}.Release|x64.ActiveCfg = Release|Any CPU
+		{25D2A189-620A-4F11-B60B-7B6111A9F7A3}.Release|x64.Build.0 = Release|Any CPU
+		{25D2A189-620A-4F11-B60B-7B6111A9F7A3}.Release|x86.ActiveCfg = Release|Any CPU
+		{25D2A189-620A-4F11-B60B-7B6111A9F7A3}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
