@@ -18,7 +18,7 @@ type User = {
     Description: string option
     Photo: string option
     Cover: CoverOption
-    Works: WorkUser seq
+    Works: WorkUser list
 }
 
 and [<JsonCvt>]CoverOption =

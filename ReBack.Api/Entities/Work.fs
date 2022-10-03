@@ -19,7 +19,7 @@ and [<CLIMutable>][<JsonCvt>]WorkInfo = {
     Cover: string
     Type: WorkType
     ReleaseYear: int
-    Tags: string seq
+    Tags: string list
 }
 and [<JsonCvt>]WorkType =
     | Book

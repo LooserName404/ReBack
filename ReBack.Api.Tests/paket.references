@@ -1,3 +1,10 @@
 ﻿Expecto
 YoloDev.Expecto.TestSdk
 Microsoft.NET.Test.Sdk
+Foq
+Bogus
+FSharp.SystemTextJson
+MongoDB.Bson.FSharp
+MongoDB.Driver
+MongoDB.FSharp
+EphemeralMongo5

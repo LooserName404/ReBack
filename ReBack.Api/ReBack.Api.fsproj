@@ -5,9 +5,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="JsonDefaultConverter.fs" />
-    <Compile Include="DatabaseSettings.fs" />
     <Compile Include="Entities\Work.fs" />
     <Compile Include="Entities\User.fs" />
+    <Compile Include="Database.fs" />
     <Folder Include="Repositories" />
     <Compile Include="Services\UserService.fs" />
     <Folder Include="Security" />

@@ -7,8 +7,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="paket.references" />
+    <Compile Include="Fakers\UserFakers.fs" />
     <Compile Include="Unit\JsonDefaultConverterTests.fs" />
-    <Folder Include="Integration" />
+    <Compile Include="Integration\SetupMongoDb.fs" />
+    <Compile Include="Integration\UserServiceTests.fs" />
     <Compile Include="Main.fs" />
   </ItemGroup>
   <ItemGroup>

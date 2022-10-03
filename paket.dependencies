@@ -10,6 +10,9 @@ nuget MongoDB.Driver
 nuget Expecto
 nuget YoloDev.Expecto.TestSdk
 nuget Microsoft.NET.Test.Sdk
+nuget Bogus
+nuget Foq
+nuget EphemeralMongo5
 
 source paket-files/nupkgs
 git https://github.com/ruxo/MongoDB.FSharp master build: "dotnet pack --output ../../../nupkgs"
