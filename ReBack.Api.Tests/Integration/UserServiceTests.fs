@@ -19,7 +19,7 @@ let tests =
                 let sut = UserService(db)
                 let expected = generateUser(Faker())
                                         
-                sut.CreateAsync expected |> Async.RunSynchronously
+                sut.CreateAsync expected |> Async.AwaitTask |> Async.RunSynchronously
                         
                 let users = collection.Find(fun _ -> true).ToList()
                         
@@ -33,7 +33,7 @@ let tests =
                     
                 collection.InsertMany expected
                                 
-                let actual = sut.GetAsync () |> Async.RunSynchronously |> Seq.toList
+                let actual = sut.GetAsync () |> Async.AwaitTask |> Async.RunSynchronously |> Seq.toList
                                 
                 Expect.sequenceEqual actual expected "Should bring the users from the database"
         ]

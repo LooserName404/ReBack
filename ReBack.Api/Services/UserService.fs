@@ -9,7 +9,11 @@ type UserService(db: IMongoDatabase) =
     let userCollection = db.GetCollection<User> USER_COLLECTION_NAME
     
     member _.CreateAsync user =
-        task { do! userCollection.InsertOneAsync user } |> Async.AwaitTask
+        task {
+            let user = { user with Id = ObjectId.GenerateNewId().ToString() }
+            do! userCollection.InsertOneAsync(user)
+            return user
+        }
     
     member _.GetAsync () =
-        task { return! userCollection.Find(fun _ -> true).ToListAsync() } |> Async.AwaitTask
+        task { return! userCollection.Find(fun _ -> true).ToListAsync() }

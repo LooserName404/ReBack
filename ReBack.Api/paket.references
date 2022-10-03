@@ -3,3 +3,4 @@ MongoDB.Bson.FSharp
 MongoDB.Driver
 MongoDB.FSharp
 Foq
+Giraffe

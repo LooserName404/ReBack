@@ -6,6 +6,8 @@ open Microsoft.Extensions.Hosting
 open MongoDB.Bson.FSharp
 open MongoDB.Driver
 open MongoDB.FSharp
+open Giraffe
+open Giraffe.EndpointRouting
 
 open ReBack.Database
 open ReBack.Controllers
@@ -32,6 +34,7 @@ let private configureServices (builder: WebApplicationBuilder) =
     configureMongoDB builder
 
 let private addServices (services: IServiceCollection) =
+    services.AddGiraffe() |> ignore
     services.AddSingleton<UserService>() |> ignore
 
 [<EntryPoint>]
@@ -40,9 +43,11 @@ let main args =
     configureServices builder
     addServices builder.Services
     let app = builder.Build()
-
-    app.MapGet("/users", Func<_,_>(UserController.getAll >> Async.RunSynchronously)) |> ignore
-    app.MapPost("/users", Func<_,_>(UserController.create >> Async.RunSynchronously)) |> ignore
+    
+    app.MapGiraffeEndpoints [
+        GET [route "/users" UserController.getAll]
+        POST [route "/users" UserController.create]
+    ]
 
     app.Run()
 
